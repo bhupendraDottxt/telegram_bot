@@ -262,7 +262,6 @@ def main():
 
     @app.route('/home', methods=['GET'])
     def home():
-        main()
         return 'Hello world'
 
     if __name__ == '__main__':
