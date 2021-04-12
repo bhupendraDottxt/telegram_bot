@@ -1,6 +1,5 @@
 import constants as keys
 from telegram.ext import *
-from flask import *
 import responses as R
 
 print("bot started...")
@@ -258,16 +257,6 @@ def main():
     updator.start_polling()
     updator.idle()
 
-    app = Flask(__name__)
 
-    @app.route('/home', methods=['GET'])
-    def home():
-        return 'Hello world'
-
-    if __name__ == '__main__':
-        app.run(debug=True)
-
-
-
-
-main()
+if __name__ == '__main__':
+    main()
