@@ -1,1 +1,1 @@
-API_KEY = '1559397277:AAHlbI7mWYLEuuhRugYG_L0EeBnokl2TFWI'
+API_KEY = os.environ.get('API_KEY','')
